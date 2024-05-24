@@ -1,0 +1,288 @@
+@import url(./reset.css);
+@import url(./reset_2.css);
+
+
+main {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  position: relative;
+  top: 100px;
+  left: 0;
+  margin-bottom: 250px;
+}
+
+.background_img {
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  background-image: url(../img/main_2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.background_text {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  color: #ffffff;
+}
+
+.background_text p {
+  font-size: 25px;
+  line-height: 180%;
+}
+
+.background_text h2 {
+  margin: auto;
+  padding-left: 10px;
+}
+
+main a {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-color: #ffffffc8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  border: 1px solid #57694A;
+  /* top buttopn >>>> 페이지 위쪽으로 */
+}
+main .top_all{
+  position: fixed;
+  bottom: 30px;
+  right: 60px;
+  z-index: 99;
+  cursor: pointer;
+}
+main .top_all img{
+  width: 50%;
+  height: 50%;
+  }
+
+.h3_wrap {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+h3 {
+  width: 10%;
+  text-align: center;
+  margin-bottom: 150px;
+  border-bottom: 2px solid #57694A;
+  padding: 3px 0;
+}
+
+.greetings_top {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 150px;
+}
+
+#greetings p {
+  font-size: 15px;
+}
+
+.greetings_title {
+  width: 48%;
+}
+
+.greetings_title p {
+  padding-top: 50px;
+}
+
+.greetings_img {
+  width: 50%;
+}
+
+.greetings_img img {
+  border-radius: 20px;
+}
+
+.greetings_text_wrap {
+  width: 95%;
+  background-color: #57694a2c;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 70px;
+  border-radius: 20px;
+  margin-bottom: 150px;
+  word-break: keep-all;
+}
+
+.greetings_text_right {
+  width: 48%;
+}
+
+.nomal2 {
+  margin: 50px 0;
+}
+
+.greetings_text_left {
+  width: 48%;
+}
+
+.green {
+  color: #57694A;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.bold {
+  font-size: 18px;
+  font-weight: 700;
+}
+.normal3{
+  margin-top: 75px;
+  margin-bottom: 52px;
+}
+
+.greetings_right_text {
+  margin-top: 80px;
+  font-weight: 500;
+  text-align: right;
+}
+.greetings_text_wrap2{
+  width: 80%;
+  background-color: #57694a2c;
+  margin: auto;
+  padding: 70px;
+  border-radius: 20px;
+  margin-bottom: 150px;
+  display: none;
+}
+.greetings_text_wrap2 p{
+  margin-bottom: 50px;
+}
+.title2{
+  display: none;
+}
+
+
+@media screen and (max-width:1200px) {
+  .greetings_text_wrap{
+    display: none;
+  }
+  .greetings_text_wrap2{
+    display: block;
+  }
+
+  .greetings_normal{
+    font-size: 13px;
+  }
+}
+@media screen and (max-width:991px) {
+  main{
+    height: 40vh;
+  }
+  .greetings_top{
+    display: block;
+  }
+  .greetings_title{
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .greetings_img{
+    width: 100%;
+  }
+  .greetings_text_wrap2{
+    width: 100%;
+  }
+  main .top_all{
+    right: 30px;
+  }
+
+
+}
+@media screen and (max-width:767px) {
+  main {
+    top: 70px;
+  }
+  #greetings p{
+    font-size: 14px;
+  }
+  .greetings_text_wrap2{
+    display: none;
+  }
+  .greetings_text_wrap{
+    display: block;
+    padding: 29px;
+  }
+  .greetings_text_right{
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .greetings_text_left{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width:576px) {
+  h3{
+    width: 26%;
+  }
+  #greetings p{
+    font-size: 13px;
+  }
+  .title1{
+    padding-right: 10px;
+  }
+  .background_text p{
+    font-size: 20px;
+  }
+  .greetings_text_wrap2{
+    display: block;
+    padding: 40px;
+  }
+  .greetings_text_wrap{
+    display: none;
+  }
+  main a{
+    width: 35px;
+    height: 35px;
+    right: 50px;
+  }
+}
+@media screen and (max-width:400px) {
+  main{
+    height: 30vh;
+    margin-bottom: 150px;
+    top: 70px;
+  }
+  h3{
+    margin-bottom: 70px;
+  }
+  .background_text p{
+    font-size: 14px;
+  }
+  .background_text h2{
+    font-size: 18px;
+  }
+  .greetings_top,.greetings_text_wrap2{
+    margin-bottom: 50px;
+  }
+  h5{
+    font-size: 14px;
+  }
+  .title2{
+    display: block;
+  }
+  .title1{
+    display: none;
+  }
+
+
+}
